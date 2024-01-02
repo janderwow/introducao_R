@@ -15,7 +15,7 @@ dmy("31-Oct-2023")
 ymd(20231031)
  
 #criando componentes data-hora
-ymd_hms("2023-10-31 07:53:10")
+ymd_hms("2023-01-02 07:53:10")
 
 # convertendo em data
 as_date(now())
