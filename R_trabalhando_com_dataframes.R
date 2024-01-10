@@ -31,4 +31,10 @@ str(people)
 glimpse(people)
 colnames(people)
 
-# exercicio teste
+# exercicio teste: criar df de rank de frutas
+
+frutas <- c("uva", "laranja", "manga", "melancia", "goiaba")
+rank <- c(5, 4, 3, 1, 2)
+
+fruits_rank <- data.frame(frutas, rank)
+View(fruits_rank)
