@@ -26,6 +26,7 @@ age <- c(" ", " ", " ", " ")
 
 people <- data.frame(names, age)
 
+# resumo do df
 head(people)
 str(people)
 glimpse(people)
