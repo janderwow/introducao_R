@@ -26,3 +26,8 @@ empregados_2 <- data.frame(first_name, last_name, job_title)
 
 unite(empregados_2, 'name', first_name, last_name, sep = ' ')
 
+# criando novas colunas calculadas com mutate
+install.packages("palmerpenguins")
+library(palmerpenguins)
+penguins %>%
+  mutate(body_mass_kg=body_mass_g/1000, flipper_length_m=flipper_length_mm/1000)
