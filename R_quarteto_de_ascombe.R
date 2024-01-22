@@ -1,5 +1,8 @@
+install.packages("tidyr")
+library(tidyr)
 install.packages('Tmisc')
 library(Tmisc)
+
 data(quartet)
 View(quartet)
 
@@ -11,3 +14,5 @@ ggplot(quartet, aes(x,y)) + geom_point() + geom_smooth(method=lm, se=FALSE) + fa
 
 install.packages('datasauRus')
 library('datasauRus')
+
+ggplot(datasaurus_dozen, aes(x=x,y=y,colour=dataset)) + geom_point() + theme_void() + theme(legend.position = "none") +facet_wrap(~dataset,ncol=3)
