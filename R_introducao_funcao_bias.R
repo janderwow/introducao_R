@@ -12,5 +12,5 @@ bias(actual_temp, predicted_temp)
 actual_sales <- c(150, 203, 137, 247, 116, 287)
 predicted_sales <- c(200, 300, 150, 250, 150, 300)
 
-
+# quanto mais proximo de 0 melhor o teste
 bias(actual_sales, predicted_sales)
