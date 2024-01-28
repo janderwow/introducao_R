@@ -18,3 +18,6 @@ p <- ggplot(data=penguins)+
 
   p + annotate("text", x=220, y=3500, label="The Gentoo are the largest", fontface="bold", size=4.5, angle=25)
   
+  
+  ggsave("Three Penguin Species.png")
+  
