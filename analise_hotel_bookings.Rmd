@@ -1,0 +1,47 @@
+---
+title: "Análise Exploratória Hotel Bookings"
+author: "Jander melo"
+date: "2024-01-31"
+output: html_document
+---
+
+# Bem Vindo
+
+#### Análise Exploratória do dataset hotel_bookings.
+
+A atividade a seguir tem como objetivo aprendizado e aplicação em R Markdown e outras ferramentas utilizadas em R. Decidi utilizar um dataset diferente do exercício original para treinar conceitos de narrativa.
+
+
+Carregando pacote "readr", utilizado para importar arquivos de texto, como .txt e .csv. E ggplot2 para vizualização de dados.
+```{r}
+library(readr)
+library(ggplot2)
+```
+
+Com a função "read_csv" vamos importar o arquivo para análise em formato csv como um tibble. O argumento "locale" está sendo passado para tratar um problema de encondig.
+```{r, results="hide", message=FALSE}
+hotel_bookings <-read_csv("hotel_bookings.csv", locale = readr::locale(encoding = "latin1"))
+```
+
+
+A função "head" retorna as seis primeiras linhas do tibble e algumas informações de resumo como numero de linhas e colunas.
+```{r}
+head(hotel_bookings)
+```
+
+Agora vamos fazer uma leitra no nome das colunas com "colnames", esta será bastante útil para entender qual coluna deveria ser renomeada se necessário.
+```{r}
+colnames(hotel_bookings)
+```
+
+A função "ggplot" faz parte do pacote ggplot2 e cria a camada do gráfico, a função "geom_bar()" trás um gráfico de barras mapeando como estética a variável "distribution_channel".
+```{r}
+ggplot(data=hotel_bookings)+
+  geom_bar(mapping = aes(x = distribution_channel, fill = distribution_channel))
+```
+
+
+##### Conclusão
+
+Com base no exercício tive uma melhor compreensão do comportamento de R Markdown e percebi sua familiaridade com os notebooks python. Em breve farei análises de problemas do mundo real com diferentes data sets exigindo também transformação nos dados.
+
