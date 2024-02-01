@@ -13,7 +13,7 @@ A atividade a seguir tem como objetivo aprendizado e aplicação em R Markdown e
 
 
 Carregando pacote "readr", utilizado para importar arquivos de texto, como .txt e .csv. E ggplot2 para vizualização de dados.
-```{r}
+```{r carregando pacotes}
 library(readr)
 library(ggplot2)
 ```
