@@ -15,3 +15,12 @@ Tópicos Abordados
 
 Pré-requisitos
 Antes de começar, é recomendável ter um conhecimento básico em análise de dados e familiaridade com conceitos estatísticos. Certifique-se de ter instalado o R e RStudio conforme as instruções fornecidas no curso.
+
+
+Instalação do R Studio
+
+Certifique-se de que o R esteja instalado no seu sistema. Você pode baixar a versão mais recente do R em https://cran.r-project.org/.
+O R Studio é uma IDE (Ambiente de Desenvolvimento Integrado) para o R. Siga os passos abaixo para instalá-lo:
+- Vá para a página de download do R Studio em https://www.rstudio.com/products/rstudio/download/.
+
+- Baixe a versão adequada para o seu sistema operacional (Windows, macOS ou Linux).
